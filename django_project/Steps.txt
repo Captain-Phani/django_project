@@ -1,0 +1,38 @@
+
+Step-1:Create project with virutal environment
+
+
+Step-2:Install Django
+    cmd:pip install django
+
+Step-3:start django project
+    cmd:django-admin startproject projectname
+
+step-4:Create an app and after creating an app open settings.py and register app in installed apps by writing the appanme in double quotes
+    cmd: python manage.py startapp appname
+
+step-5:Define Models in Models.py
+
+step-6:After Defining Models use command to create a script file which enables to create a script that is interpreted by internal database
+    cmd:python manage.py makemigrations
+
+step-7: After creating a scriptfile we have to make migrate the script file to the database by using below cmd
+    cmd:python manage.py migrate
+
+step-8: Create a serializers.py in app folder (to convert the tables to json) and write the code
+
+step-9:To manage the operations on table we have to create admin
+    cmd:python manage.py createsuperuser
+
+step-10:After creating admin register models in admin.py
+       code:admin.site.register(modelname)
+
+step-11:Then run the server by using below cmd
+        cmd:python manage.py runserver
+
+step-12:To create an api install rest framework
+    cmd: pip install djangorestframework
+
+step-13: Register in installed apps as we did for appname
+
+
